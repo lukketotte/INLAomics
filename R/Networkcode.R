@@ -52,7 +52,7 @@ df %>%
 ggsave(paste("/Users/lukar818/Documents/postdoc/research/RnaProt/plots/pdfplots/spleen", "/annotation.pdf", sep = ""), width = 9, height = 5.2, dpi=600)
 
 
-protid = 1
+protid = 16
 preds = c("Cd3e", "Adgre1", "Cd163")
 k = length(preds)
 aar = c("pulp", "bf", "mz", "pals")
@@ -116,7 +116,7 @@ for(i in 1:nrow(W)){
 }
 
 # Recreate CD3 row
-PROT = 1
+PROT = 4
 protform = as.formula(paste(paste(names(fig_pairs)[PROT], "~"), paste(c("bf", "mz", "pals",unname(sapply(fig_pairs, c))), collapse = "+")))
 m <- inla.LCAR.model(W = W, alpha.min = 0, alpha.max = 1)
 prot.car <- inla(update(protform, . ~. + f(idx, model = m)), data = df, family = "poisson", offset = log(size_prot))
@@ -125,7 +125,10 @@ top_preds = top_preds[which(!(top_preds %in% c("(Intercept)","bf","pals","mz", f
 
 # Protein-gene pair
 preds = fig_pairs[[PROT]]
-ccar = spotsInla(df, W, names(fig_pairs)[PROT], preds)
+ccar = spotsInla(df, W, names(fig_pairs)[PROT], preds, aar)
+
+## add to cd4
+loc = "~/Documents/postdoc/MCAR/r/spotscorr/"
 
 # Protein | 2 genes
 preds = c(fig_pairs[[PROT]], top_preds[1])
