@@ -84,7 +84,7 @@ Example code can be found in `./scripts/SPOTS/BreastPrediction.R`
 
 # Other datasets
 ## Visium10x, tonsil
-Visium 10x [datasets](\href{https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard}{Visium10x datasets})
+[Visium10x datasets](https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard)
 ```
 .
 ├── raw_feature_bc_matrix
