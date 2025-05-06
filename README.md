@@ -1,6 +1,6 @@
+![logo](https://github.com/user-attachments/assets/6a9112a4-c33c-4bd0-80fa-a98b194caf3c)
 # INLAomics
 Spatial generalized linear mixed models (GMMM) methods for multiomic analysis using Integrated Nested Laplace Approximations (INLA). 
-![logo](https://github.com/user-attachments/assets/6a9112a4-c33c-4bd0-80fa-a98b194caf3c)
 # Models
 
 All models are implemented using the R-package [`INLA`](https://www.r-inla.org/) using the `inla.rgeneric.define()` method. The relevant scripts are under `./INLA/`
