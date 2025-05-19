@@ -122,6 +122,9 @@ Example code can be found in `./scripts/visium/tonsil.R`
 ```
 Example code can be found in `./scripts/Highplex/highplex.R`
 
+# Versions
+
+
 # References
 [1] Leroux, B. G., Lei, X., and Breslow, N. "Estimation of disease rates in small areas: a new mixed model
 for spatial dependence". In _Statistical models in epidemiology, the environment, and clinical trials_, pages
